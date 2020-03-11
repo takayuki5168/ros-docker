@@ -1,10 +1,10 @@
 # This is an auto generated Dockerfile for ros:ros-base
 # generated from docker_images/create_ros_image.Dockerfile.em
-FROM ros:melodic-ros-base-bionic
+FROM ros:kinetic-ros-base-xenial
 
 # install ros packages
 RUN apt-get update && apt-get install -y \
-    ros-melodic-desktop-full \
+    ros-kinetic-desktop-full \
     python-catkin-tools \
     && rm -rf /var/lib/apt/lists/*
 
@@ -19,4 +19,4 @@ RUN groupadd --gid 1000 developer && \
 
 USER developer
 WORKDIR /home/developer
-CMD /bin/bash && source /opt/ros/melodic/setup.bash
+CMD /bin/bash && source /opt/ros/kinetic/setup.bash

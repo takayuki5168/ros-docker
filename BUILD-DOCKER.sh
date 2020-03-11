@@ -1,1 +1,1 @@
-sudo docker build -t ros-melodic .
+sudo docker build -t ros-kinetic .
