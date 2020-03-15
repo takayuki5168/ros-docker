@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 
 # install other tools
 RUN apt-get update && apt-get install -y \
-    tmux git emacs25 vim gnuplot
+    tmux git emacs24 vim gnuplot
 
 # set display
 RUN groupadd --gid 1000 developer && \
